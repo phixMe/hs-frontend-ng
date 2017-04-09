@@ -1,0 +1,8 @@
+<div class="panel">
+  <div class="title">
+    Top Sales Items
+  </div>
+  <ul>
+    <app-top-sales-list-item *ngFor="let sale of sales; let i = index;" [item]="sale" [index]="i"></app-top-sales-list-item>
+  </ul>
+</div>
