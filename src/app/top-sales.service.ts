@@ -7,6 +7,7 @@ export class TopSalesService {
   constructor() { }
 
   // this would normally be a call to an endpoint, but for the purposes of this exercise, I am providing the raw object
+  // to avoid a CORS issue in a local environment
   getStores() {
     return [
       {

@@ -10,7 +10,6 @@ export class TopSalesListComponent implements OnInit {
   sales: any[];
   constructor(private tss: TopSalesService) {
     this.sales = tss.getTopSales(tss.getStores(), 10);
-    console.log(this.sales);
   }
 
   ngOnInit() {
